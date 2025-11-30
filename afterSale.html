@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>I Discover Suzuki Range</title>
+</head>
+<body>
+      <nav class="fixed top-0 w-100 p-2 z-40 bg-white px-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-6 ">
+                <a class="logo animated fadeInDown" href="index.html">
+                    <img src="https://www.suzuki.ng/media/gamme/marques/graph/1-logo-header-suzuki.png" alt="Logo">
+                </a>
+                
+                <div class="logo-container">
+                    <h2 class="font-bold text-2xl">My dealership</h2>
+                </div>
+            </div>
+            <div class="navItems-container flex gap-3">
+                <div class="navItems flex gap-3 items-center">
+                    <ul class="flex gap-3 font-semibold cursor-pointer">
+                        <li class="spring text-red-500 duration-300"><a href="findOutMore.html">FIND OUT MORE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="range.html">RANGE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="afterSale.html">AFTER SALES</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">DEALERSHIPS</a></li>
+                    </ul>
+                   
+                </div>
+                <button id="menuBtn" class="border border-black hover:border-red-500 px-4 py-2 font-bold ">MENU</button>
+                
+            </div>
+        </div>
+    </nav>
+
+     <ul id="sideBar" class="side-bar bg-white w-4/5 md:w-2/6 h-screen top-0 right-0 fixed overflow-y-auto font-bold z-30 flex flex-col gap-10 px-4 hidden pb-6">
+                        <li class=" hover:text-red-500 duration-300 mt-[25%]"><a href="index.html">FIND OUT MORE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="range.html">I BUY MY VEHICLE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="afterSale.html">I SERVICE MY VEHICLE</a>S</li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">OUR MOBILITY SOLUTIONS</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">VIRTUAL SHOWROOM</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">NEWS</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">SUZUKI NIGERIA</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">I CONTACT MY DEALERSHIP</a></li>
+                        <hr>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">INFORMATION REQUEST</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">BOOK A TEST DRIVE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">TRADE IN REQUEST</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">NEWSLETTER</a></li>
+                        <hr>
+                        <p>FOLLOW US ON SOCIAL MEDIA</p>
+                        <div class="flex gap-10 socia-media text-2xl cursor-pointer">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <hr>
+                        <p class="text-2xl">QUICK ACCESS</p>
+                        <form action="" class="w-100 flex flex-col gap-3">
+                            <input type="text" placeholder="Last Name*" required>
+                            <input type="email" placeholder="E-mail*" required>
+                            <input type="tel" placeholder="Phone*" required>
+                            <select name="service" id="services">
+                                <option value="Service">-Servce*-</option>
+                                <option value="Service">After sale</option>
+                                <option value="Service">Others</option>
+                                <option value="Service">Sale</option>
+                                <option value="Service">Spare part</option>
+                                <option value="Service">Used car</option>
+                            </select>
+                            <select name="dealership" id="dealerships">
+                                <option value="Service">-Dealership*-</option>
+                                <option value="Service">SUZUKI CFAO MOBILITY - LADIPO</option>
+                                <option value="Service">SUZUKI CFAO MOBILITY - ABUJA</option>
+                                <option value="Service">SUZUKI CFAO MOBILITY - LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOBILITY - PORT HARCOURT</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                            </select>
+                            <textarea placeholder="Your message" rows="4" required></textarea>
+                            <button class="text-2xl font-bold text-white bg-slate-500 rounded-lg">SEND</button>
+                        </form>
+
+
+                    </ul>
+    <main class="flex-grow">
+        <div class="sales-container sticky top-0 text-white font-bold z-[-1]">
+            <h2 class="text-4xl text-shadow-black/30">I SERVICE MY VEHICLE</h2>
+            <div class="salesBtn grid grid-cols-1 md:grid-cols-2 mt-6 gap-3">
+                <button class="bg-black/40 rounded-lg py-2 px-16">AFTER SALES BOOKING</button>
+                <button class="bg-black/40 rounded-lg py-2 px-16">OUR SERVICES</button>
+            </div>
+        </div>
+
+        <div class="service bg-white h-screen p-5 z-20">
+            <h2 class="font-bold text-4xl  text-center">I SERVICE MY VEHICLE</h2>
+            <div class="flex items-end gap-4">
+                <p class="font-bold text-slate-500 text-4xl mt-10 text-nowrap">Quick access</p>
+                <div class="straightLine bg-slate-300 w-100 h-2"></div>
+            </div>
+            <div class="service-container mt-3 flex flex-col md:flex-row gap-4">
+                <div class="FAQ bg-slate-300 flex flex-col w-full md:w-[350px] h-fit p-3">
+                    <p class="border-b-2 mb-3 border-slate-500 ">Why choose CFAO MOBILITY?</p>
+                    <p class="border-b-2 mb-3 border-slate-500 ">Warranty Conditions</p>
+                    <p class="border-b-2 mb-3 border-slate-500 ">Service Packages</p>
+                    <p class="border-b-2 mb-3 border-slate-500 ">Recall Campaign</p>
+                    <p class="mb-3 ">Contact us</p>
+                </div>
+                <div class="w-full border">
+                    <h3 class="text-slate-500 font-bold text-center">Why choose CFAO MOBILITY?</h3>
+
+                    <div class="service-text m-6">
+                        <h4 class="text-red-500 font-bold mt-6 mb-2">Prices at a glance</h4>
+                        <p>Our prices are clear and displayed throughout our workshops. Our packages include spare parts and labor rates.</p>
+                        <h4 class="text-red-500 font-bold mt-6 mb-2">Warranty - Original spare parts</h4>
+                        <p>The manufacturer’s original spare parts have gone through thousands of hours of research and testing, are covered by hundreds of patents and have been crash-tested to guarantee vehicle quality and driver safety. By trusting CFAO for servicing, you can be sure that you are purchasing original parts; you have the best driving performance and maximum safety for everyone aboard.</p>
+                        <h4 class="text-red-500 font-bold mt-6 mb-2">Fully equipped workshops</h4>
+                        <p>CFAO’s workshops have access to state of the art tools and diagnosis features, needed to make your car last longer</p>
+                        <h4 class="text-red-500 font-bold mt-6 mb-2">Staff trained to the latest technology</h4>
+                        <p>The technical evolution of vehicles requires highly trained experts to ensure good after-sales service. In conjunction with the manufacturers, CFAO provides regular training for its employees.</p>
+                        <h4 class="text-red-500 font-bold mt-6 mb-2">Quick-service</h4>
+                        <p>For regular car service, you can use the quick-service workshop. We will take care of your car without having to book in, and you will benefit from expert advice . The quick-service is fast, offers high quality standards and a comprehensive checkup for your vehicle.</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+         <div class="bg-black/80 w-full py-10 flex flex-wrap justify-between items-center text-white font-bold  px-6 gap-10">
+        <div class="flex gap-10">
+            <div class="footer-logo">
+                <img src="https://www.suzuki.ng/media/groupes/graph/1-logo.png" alt="footer logo">
+            </div>
+            <div class="nav-items flex gap-10">
+                <div class="flex flex-col">
+                    <a href="#">Homepage</a>
+                    <a href="#">Range</a>
+                    <a href="#">Services</a>
+                </div>
+                <div class="flex flex-col">
+                    <a href="#">information request</a>
+                    <a href="#">Book a test drive</a>
+                    <a href="#">Trade-in request</a>
+                </div>
+                <div class="flex flex-col">
+                    <a href="#">Dealerships</a>
+                    <a href="#">News</a>
+                </div>
+            </div>
+        </div>
+            
+            <div class="delearship flex flex-col text-2xl md:text-3xl">
+                <p class="text-bold text-red-500">27</p>
+                <p class="text-slate-500">DEALERSHIPS</p>
+            </div>
+        </div>
+    <footer class="flex justify-between items-center bg-black text-white w-100 py-10 px-6 >
+        <div class="flex gap-10">
+            <div class="text-slate-500">
+                <a href="#">Terns of use</a> / <a href="#">Sitemap</a>
+            </div>
+        </div>
+        <div class="flex gap-6 socia-media text-2xl cursor-pointer">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

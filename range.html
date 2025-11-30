@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>I Discover Suzuki Range</title>
+</head>
+<body>
+      <nav class="sticky top-0 w-100 p-2 z-40 bg-white px-4 ">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-6 ">
+                <a class="logo animated fadeInDown" href="index.html">
+                    <img src="https://www.suzuki.ng/media/gamme/marques/graph/1-logo-header-suzuki.png" alt="Logo">
+                </a>
+                
+                <div class="logo-container">
+                    <h2 class="font-bold text-2xl">My dealership</h2>
+                </div>
+            </div>
+            <div class="navItems-container flex gap-3">
+                <div class="navItems flex gap-3 items-center">
+                    <ul class="flex gap-3 font-semibold cursor-pointer">
+                        <li class="spring text-red-500 duration-300"><a href="findOutMore.html">FIND OUT MORE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="range.html">RANGE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="afterSale.html">AFTER SALE</a>S</li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">DEALERSHIPS</a></li>
+                    </ul>
+                   
+                </div>
+                <button id="menuBtn" class="border border-black hover:border-red-500 px-4 py-2 font-bold ">MENU</button>
+                
+            </div>
+        </div>
+    </nav>
+
+     <ul id="sideBar" class="side-bar bg-white w-4/5 md:w-2/6 h-screen top-0 right-0 fixed overflow-y-auto font-bold z-30 flex flex-col gap-10 px-4 hidden pb-6">
+                        <li class=" hover:text-red-500 duration-300 mt-[25%]"><a href="index.html">FIND OUT MORE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="range.html">I BUY MY VEHICLE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="afterSale.html">I SERVICE MY VEHICLE</a>S</li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">OUR MOBILITY SOLUTIONS</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">VIRTUAL SHOWROOM</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">NEWS</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">SUZUKI NIGERIA</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">I CONTACT MY DEALERSHIP</a></li>
+                        <hr>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">INFORMATION REQUEST</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">BOOK A TEST DRIVE</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">TRADE IN REQUEST</a></li>
+                        <li class=" hover:text-red-500 duration-300"><a href="dealership.html">NEWSLETTER</a></li>
+                        <hr>
+                        <p>FOLLOW US ON SOCIAL MEDIA</p>
+                        <div class="flex gap-10 socia-media text-2xl cursor-pointer">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <hr>
+                        <p class="text-2xl">QUICK ACCESS</p>
+                        <form action="" class="w-100 flex flex-col gap-3">
+                            <input type="text" placeholder="Last Name*" required>
+                            <input type="email" placeholder="E-mail*" required>
+                            <input type="tel" placeholder="Phone*" required>
+                            <select name="service" id="services">
+                                <option value="Service">-Servce*-</option>
+                                <option value="Service">After sale</option>
+                                <option value="Service">Others</option>
+                                <option value="Service">Sale</option>
+                                <option value="Service">Spare part</option>
+                                <option value="Service">Used car</option>
+                            </select>
+                            <select name="dealership" id="dealerships">
+                                <option value="Service">-Dealership*-</option>
+                                <option value="Service">SUZUKI CFAO MOBILITY - LADIPO</option>
+                                <option value="Service">SUZUKI CFAO MOBILITY - ABUJA</option>
+                                <option value="Service">SUZUKI CFAO MOBILITY - LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOBILITY - PORT HARCOURT</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                                <option value="Service">SUZUKI CFAO MOTORS LAGOS</option>
+                            </select>
+                            <textarea placeholder="Your message" rows="4" required></textarea>
+                            <button class="text-2xl font-bold text-white bg-slate-500 rounded-lg">SEND</button>
+                        </form>
+
+
+                    </ul>
+
+    <main class="bg-white pb-6">
+        <h2 class="font-bold text-4xl text-center">I Discover Suzuki Range</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 car-container font-bold text-center">
+            <div class="car-card">
+                <img src="Assets/2017_Suzuki_Swift_launched_in_Japan__24_photos_-removebg-preview.png"  alt="">    
+                <P class="bg-[#F5F5F5]">NEW DZIRE</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/2019_Suzuki_Jimny-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">NEW SWIFT</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/All-New_2024_Maruti_Suzuki_Swift_launched_in_India-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">ALTO</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/Essai-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">CELERIO</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/JIMNY___AUTOMOBILE__Global_Suzuki-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">S-PRESSO</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/Maruti_Dzire_2018_Colors__Blue__Grey__White__Brown__Silver__Red-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">DZIRE</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/Maruti_Fronx_review-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">CIAZ</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/New_Swift_Modified-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">BALENO</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/Suzuki_Indonesia_keenly_following_developments_of_the_new_Maruti_Ertiga_diesel_variant-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">FRONX</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/The_revolutionary_Suzuki_Dzire__now_boasting_a_-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">ERTIGA</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/The_beloved_Maruti_Suzuki_Fronx_gets_a_bold_-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">JIMNY</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/2019_Suzuki_Jimny-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">GRAND VITARA</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/Suzuki_Ciaz_s-Sporty_body_kit_showcased_at_Thai_Motor_Expo_2017-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">SUPER CARRY</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/Auto_Deals-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">EECO</P>
+            </div>
+            <div class="car-card">
+                <img src="Assets/2017_Suzuki_Swift_launched_in_Japan__24_photos_-removebg-preview.png" alt="">    
+                <P class="bg-[#F5F5F5]">JIMNY 5 DOORS</P>
+            </div>
+
+        </div> 
+    </main>
+ <div class="bg-black/80 w-full py-10 flex flex-wrap justify-between items-center text-white font-bold  px-6 gap-10">
+        <div class="flex gap-10">
+            <div class="footer-logo">
+                <img src="https://www.suzuki.ng/media/groupes/graph/1-logo.png" alt="footer logo">
+            </div>
+            <div class="nav-items flex gap-10">
+                <div class="flex flex-col">
+                    <a href="#">Homepage</a>
+                    <a href="#">Range</a>
+                    <a href="#">Services</a>
+                </div>
+                <div class="flex flex-col">
+                    <a href="#">information request</a>
+                    <a href="#">Book a test drive</a>
+                    <a href="#">Trade-in request</a>
+                </div>
+                <div class="flex flex-col">
+                    <a href="#">Dealerships</a>
+                    <a href="#">News</a>
+                </div>
+            </div>
+        </div>
+            
+            <div class="delearship flex flex-col text-2xl md:text-3xl">
+                <p class="text-bold text-red-500">27</p>
+                <p class="text-slate-500">DEALERSHIPS</p>
+            </div>
+        </div>
+    <footer class="flex justify-between items-center bg-black text-white w-100 py-10 px-6 >
+        <div class="flex gap-10">
+            <div class="text-slate-500">
+                <a href="#">Terns of use</a> / <a href="#">Sitemap</a>
+            </div>
+        </div>
+        <div class="flex gap-6 socia-media text-2xl cursor-pointer">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+        </div>
+    </footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+.carousel-item {
+    position: relative;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+.spring {
+  display: inline-block;
+  animation: scaleSpring 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+@keyframes scaleSpring {
+  0%, 100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.98);
+  }
+}
+
+
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-item video {
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+form select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.car-card img{
+    height: 40vh;
+    cursor: pointer;
+}
+
+.sales-container{
+    background:linear-gradient(rgba(0, 0, 0, .2),rgba(0, 0, 0, .2)), url(../Assets/Auto\ Mechanic\ Repairing\ Engine\ –\ Professional\ Workshop\ Scene.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.map{
+    width: 100%;
+    height: 50vh;
+    background: url(https://i.pinimg.com/1200x/e7/0c/28/e70c2855fcaa37402c96ea1d02411740.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.map img{
+    background-size: contain;
+
+}
+
+.img{
+    background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),url(../Assets/land\ Rover\ Defender\ photography\ \ land\ \,\ Rover\,\ Defender\ \,\ car.jpeg);
+    height: 75vh;
+
+}
+
+
+
+@media(max-width:940px){
+
+    nav .logo-container{
+        display: none;
+    }
+    nav .navItems{
+        display: none;
+    }
+}
